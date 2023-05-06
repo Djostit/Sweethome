@@ -1,6 +1,12 @@
 /*
  * Globals
  */
+ body {
+  text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5);
+  box-shadow: inset 0 0 5rem rgba(0, 0, 0, .5);
+  font-family: 'Nunito', sans-serif;
+  font-size: 1.2em;
+}
 
 
 /* Custom default button */
@@ -11,17 +17,44 @@
   text-shadow: none; /* Prevent inheritance from `body` */
 }
 
+.image-container img {
+  width: 14rem;
+  height: 18rem;
+  filter: blur(3px) brightness(0.4);
+  opacity: 0.6;
+  transition: all 0.3s ease;
+}
+
+.image-container {
+  position: relative;
+  display: inline-block;
+}
+
+.image-container:hover {
+  cursor: pointer;
+}
+
+.image-container p {
+  font-family: 'Nunito', sans-serif;
+  font-weight: 600;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 1.4rem;
+  transition: all 0.3s ease;
+  z-index: 1;
+}
+
+.image-container:hover img {
+  opacity: 0.8;
+}
+
 
 /*
  * Base structure
  */
 
-body {
-  text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5);
-  box-shadow: inset 0 0 5rem rgba(0, 0, 0, .5);
-  font-family: 'Nunito', sans-serif;
-  font-size: 1.2em;
-}
 
 .cover-container {
   max-width: 42em;
