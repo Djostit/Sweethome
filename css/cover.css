@@ -8,7 +8,9 @@
   font-size: 1.2em;
 }
 
-
+.mt-20 {
+  margin-bottom: 16rem;
+}
 /* Custom default button */
 .btn-secondary,
 .btn-secondary:hover,
@@ -18,8 +20,6 @@
 }
 
 .image-container img {
-  width: 14rem;
-  height: 18rem;
   filter: blur(3px) brightness(0.4);
   opacity: 0.6;
   transition: all 0.3s ease;
