@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="ru-RU" class="h-100">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="icon" href="assests/img/pexels-catherine-augustin-3049121.jpg">
+    <link rel="stylesheet" href="css/cover.css">
+    <title>SweetHome | Войти</title>
+
+</head>
+
+<body class="d-flex text-center text-white bg-dark">
+    <div class="container d-flex w-100 p-3 mx-auto flex-column">
+        <header class="container-fluid row mb-auto">
+            <div class="row d-flex justify-content-between align-items-center">
+                <h3 class="mb-0 p-0 col-12 col-md-2">SweetHome</h3>
+                <form class="form-inline d-flex col-12 col-md-5">
+                    <input class="form-control mr-sm-2 mr" type="search" placeholder="Поиск" aria-label="Поиск">
+                    <button class="btn btn-outline-success mr-3 my-2 my-sm-0" type="submit">Поиск</button>
+                </form>
+                <p class="m-0 col-12 col-md-3 d-flex text-start">Пользователей онлайн: 150 <br> Новых заказов: 32</p>
+                <div class="mb-0 p-0 col-12 col-md-2">
+                    <button type="submit" class="btn btn-primary btn w-100 mb-1" onclick="javascript:location.href='signin.html'">Войти</button>
+                    <button type="submit" class="btn btn-primary btn w-100" onclick="javascript:location.href='signup.html'">Зарегистрироваться</button>
+                </div>
+            </div>
+        </header>
+
+        <main class="container-fluid row mb-auto mt-5 px-3">
+            <div class="container mt-5 row d-flex">
+                <h1>Вход в личный кабинет</h1>
+                <form>
+                  <div class="mb-3">
+                    <label for="login" class="form-label">Логин</label>
+                    <input type="text" class="form-control" id="login" name="login" required>
+                  </div>
+                  <div class="mb-3">
+                    <label for="password" class="form-label">Пароль</label>
+                    <input type="password" class="form-control" id="password" name="password" required>
+                  </div>
+                  <div class="mb-3 form-check">
+                    <input type="checkbox" class="form-check-input" id="rememberMe" name="rememberMe">
+                    <label class="form-check-label" for="rememberMe">Запомнить меня</label>
+                  </div>
+                  <button type="submit" class="btn btn-primary">Войти</button>
+                </form>
+                <hr>
+                <p>Войти через:</p>
+                <div class="btn-group">
+                  <button type="button" class="btn btn-outline-primary"><i class="bi bi-facebook"></i> Facebook</button>
+                  <button type="button" class="btn btn-outline-danger"><i class="bi bi-google"></i> Google</button>
+                  <button type="button" class="btn btn-outline-primary"><i class="bi bi-linkedin"></i> LinkedIn</button>
+                  <button type="button" class="btn btn-outline-info"><i class="bi bi-twitter"></i> Twitter</button>
+                </div>
+              </div>
+        </main>
+
+        <footer class="container-fluid row mt-12 text-white-50">
+            <div class="container">
+                <div class="row">
+                  <div class="col-md-4">
+                    <!-- <img src="logo.png" class="img-fluid mb-3" alt="Логотип"> -->
+                    <h3 class="mb-3">SweetHome</h3>
+                    <p>Мы предоставляем лучшие услуги в своей области и профессионально решаем задачи нашим клиентам.</p>
+                    <ul class="list-unstyled">
+                      <li>Email: info@sweethome.com</li>
+                      <li>Телефон: +1 (123) 456-7890</li>
+                    </ul>
+                  </div>
+                  <div class="col-md-4">
+                    <h5>Меню</h5>
+                    <ul class="list-unstyled">
+                      <li><a href="#">О нас</a></li>
+                      <li><a href="#">Контакты</a></li>
+                      <li><a href="#">Партнерская программа</a></li>
+                      <li><a href="#">Вопрос-ответ</a></li>
+                    </ul>
+                  </div>
+                  <div class="col-md-4">
+                    <h5>Социальные сети</h5>
+                    <ul class="list-unstyled">
+                      <li><a href="#"><i class="fab fa-facebook-f"></i> Facebook</a></li>
+                      <li><a href="#"><i class="fab fa-twitter"></i> Twitter</a></li>
+                      <li><a href="#"><i class="fab fa-instagram"></i> Instagram</a></li>
+                    </ul>
+                    <h5>Скачать приложение</h5>
+                    <div class="d-flex justify-content-center">
+                      <a href="#" class="btn btn-primary me-2"><i class="fab fa-apple"></i> App Store</a>
+                      <a href="#" class="btn btn-primary"><i class="fab fa-google-play"></i> Google Play</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="row mt-3">
+                  <div class="col-md-12 text-center">
+                    <p>&copy; 2021 SweetHome. Все права защищены. by <a
+                        href="https://github.com/Djostit" class="text-white">Djostit</a>.</p>
+                  </div>
+                </div>
+              </div>
+        </footer>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

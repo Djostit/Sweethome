@@ -8,8 +8,8 @@
   font-size: 1.2em;
 }
 
-.mt-20 {
-  margin-bottom: 16rem;
+.mt-12 {
+  margin-top: 12rem;
 }
 /* Custom default button */
 .btn-secondary,
@@ -23,6 +23,10 @@
   filter: blur(3px) brightness(0.4);
   opacity: 0.6;
   transition: all 0.3s ease;
+}
+
+.card-addon {
+  height: 300px;
 }
 
 .image-container {
