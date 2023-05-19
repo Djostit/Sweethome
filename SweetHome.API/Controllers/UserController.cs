@@ -27,7 +27,7 @@ public class UserController : ControllerBase
             _logger.LogInformation("Пользователь с такой почтой уже существует.");
             return BadRequest("Пользователь с такой почтой уже существует.");
         }
-
+        user.Password = BCrypt.Net.BCrypt.HashPassword(user.Password);
         try
         {
             await _context.Users.AddAsync(user);
@@ -38,6 +38,27 @@ public class UserController : ControllerBase
             // System.IO.File.WriteAllBytes(fileName, user.Photo); // сохраняем файл
             _logger.LogInformation($"Метод Registration был успешно вызван");
             return StatusCode(StatusCodes.Status201Created);
+        }
+        catch (Exception ex)
+        {
+            return StatusCode(StatusCodes.Status500InternalServerError, ex.Message);
+        }
+    }
+    [HttpPost("Authorization")]
+    public async Task<IActionResult> Authorization([FromBody] User user)
+    {
+        if (!ModelState.IsValid)
+            return BadRequest(ModelState);
+        
+        try
+        {
+            var existingUser = await _context.Users.FindAsync(user.Id);
+            if(existingUser == null)
+                return BadRequest("Пользователь не найден.");
+            else if(!BCrypt.Net.BCrypt.Verify(existingUser.Password, user.Password))
+                return BadRequest("Пользователь не найден.");
+            else
+                return Ok(true);
         }
         catch (Exception ex)
         {

@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "HW0YQTveMx3dzQre8I47foMsdgok0bwR19DP1OaWFkYVDi8f8NIA8pE/8Vz0t1mwS3Y/KL6ZVOPFACWmgmZbEQ==",
+  "dgSpecHash": "CKUNwJcZ369UCQ4ixn9s0E1QIwNiceDbt3/LJCKBTmC+4RcirTgMSyT3c9B2mIjSlDI7nzEbaVp0ltmKe/vc+w==",
   "success": true,
   "projectFilePath": "C:\\Users\\djost\\OneDrive\\Desktop\\sweethome\\SweetHome.API\\SweetHome.API.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\djost\\.nuget\\packages\\bcrypt.net-next\\4.0.3\\bcrypt.net-next.4.0.3.nupkg.sha512",
     "C:\\Users\\djost\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\djost\\.nuget\\packages\\microsoft.aspnetcore.openapi\\7.0.5\\microsoft.aspnetcore.openapi.7.0.5.nupkg.sha512",
     "C:\\Users\\djost\\.nuget\\packages\\microsoft.entityframeworkcore\\7.0.5\\microsoft.entityframeworkcore.7.0.5.nupkg.sha512",

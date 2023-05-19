@@ -41,3 +41,4 @@ C:\Users\djost\OneDrive\Desktop\sweethome\SweetHome.API\obj\Debug\net7.0\refint\
 C:\Users\djost\OneDrive\Desktop\sweethome\SweetHome.API\obj\Debug\net7.0\SweetHome.API.pdb
 C:\Users\djost\OneDrive\Desktop\sweethome\SweetHome.API\obj\Debug\net7.0\SweetHome.API.genruntimeconfig.cache
 C:\Users\djost\OneDrive\Desktop\sweethome\SweetHome.API\obj\Debug\net7.0\ref\SweetHome.API.dll
+C:\Users\djost\OneDrive\Desktop\sweethome\SweetHome.API\bin\Debug\net7.0\BCrypt.Net-Next.dll
