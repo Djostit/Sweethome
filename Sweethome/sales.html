@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="ru-RU" class="h-100">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="icon" href="assests/img/pexels-catherine-augustin-3049121.jpg">
+    <link rel="stylesheet" href="css/sweethome.css">
+    <title>SweetHome | Профиль</title>
+
+</head>
+
+<body class="d-flex text-center text-white bg-dark">
+    <div class="container d-flex w-100 p-3 mx-auto flex-column">
+        <header class="container-fluid row mb-auto">
+            <div class="row d-flex justify-content-between align-items-center">
+              <h3 class="mb-0 p-0 col-12 col-md-2"><a href="javascript:location.href='index.html'" class="text-decoration-none text-white">SweetHome</a></h3>
+              <form class="form-inline d-flex col-12 col-md-5">
+                    <input class="form-control mr-sm-2 mr" type="search" placeholder="Поиск" aria-label="Поиск">
+                    <button class="btn btn-outline-success mr-3 my-2 my-sm-0" type="submit">Поиск</button>
+                </form>
+                <p class="m-0 col-12 col-md-3 d-flex text-start">Пользователей онлайн: 150 <br> Новых заказов: 32</p>
+                <div class="mb-0 p-0 col-12 col-md-2">
+                    <button type="submit" class="btn btn-primary btn w-100 mb-1" onclick="javascript:location.href='signin.html'">Войти</button>
+                    <button type="submit" class="btn btn-primary btn w-100" onclick="javascript:location.href='signup.html'">Зарегистрироваться</button>
+                </div>
+            </div>
+        </header>
+
+        <main class="container-fluid row mb-auto mt-5 px-3">
+            <div class="container">
+                <h1>Продажа</h1>
+            
+                <div class="card">
+                  <div class="card-header">
+                    Блок подбора недвижимости
+                  </div>
+                  <div class="card-body">
+                    <form>
+                      <div class="row">
+                        <div class="col-md-4">
+                          <div class="mb-3">
+                            <label for="city" class="form-label">Город</label>
+                            <select id="city" class="form-select">
+                              <option value="city1">Город 1</option>
+                              <option value="city2">Город 2</option>
+                              <option value="city3">Город 3</option>
+                            </select>
+                          </div>
+                          <div class="mb-3">
+                            <label for="housingComplex" class="form-label">Название ЖК</label>
+                            <input type="text" class="form-control" id="housingComplex">
+                          </div>
+                        </div>
+                        <div class="col-md-4">
+                          <div class="mb-3">
+                            <label for="propertyType" class="form-label">Тип недвижимости</label>
+                            <select id="propertyType" class="form-select">
+                              <option value="apartment">Квартира</option>
+                              <option value="room">Комната</option>
+                              <option value="house">Дом</option>
+                              <option value="land">Участок</option>
+                              <option value="commercial">Коммерческая</option>
+                            </select>
+                          </div>
+                          <div class="mb-3">
+                            <label for="rooms" class="form-label">Количество комнат</label>
+                            <select id="rooms" class="form-select">
+                              <option value="1">1</option>
+                              <option value="2">2</option>
+                              <option value="3">3</option>
+                              <option value="4">4</option>
+                              <option value="5">5 и более</option>
+                            </select>
+                          </div>
+                        </div>
+                        <div class="col-md-4">
+                          <div class="mb-3">
+                            <label for="priceFrom" class="form-label">Цена от</label>
+                            <input type="number" class="form-control" id="priceFrom">
+                          </div>
+                          <div class="mb-3">
+                            <label for="priceTo" class="form-label">Цена до</label>
+                            <input type="number" class="form-control" id="priceTo">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-12">
+                          <div class="text-center">
+                            <button class="btn btn-success">Показать на карте</button>
+                            <button class="btn btn-primary">Найти</button>
+                          </div>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+            
+                <div class="row mt-4">
+                  <div class="col-md-4">
+                    <div class="card">
+                      <img src="path_to_image.jpg" class="card-img-top" alt="Изображение недвижимости">
+                      <div class="card-body">
+                        <h5 class="card-title">Описание недвижимости</h5>
+                        <p class="card-text">Дата добавления: 01.01.2023</p>
+                      </div>
+                    </div>
+                  </div>
+            
+                  <!-- Дополнительные карточки объявлений -->
+            
+                </div>
+            
+              </div>
+        </main>
+
+        <footer class="container-fluid row mt-12 text-white-50">
+            <div class="container">
+                <div class="row">
+                  <div class="col-md-4">
+                    <!-- <img src="logo.png" class="img-fluid mb-3" alt="Логотип"> -->
+                    <h3 class="mb-3">SweetHome</h3>
+                    <p>Мы предоставляем лучшие услуги в своей области и профессионально решаем задачи нашим клиентам.</p>
+                    <ul class="list-unstyled">
+                      <li>Email: info@sweethome.com</li>
+                      <li>Телефон: +1 (123) 456-7890</li>
+                    </ul>
+                  </div>
+                  <div class="col-md-4">
+                    <h5>Меню</h5>
+                    <ul class="list-unstyled">
+                      <li><a href="#">О нас</a></li>
+                      <li><a href="#">Контакты</a></li>
+                      <li><a href="#">Партнерская программа</a></li>
+                      <li><a href="#">Вопрос-ответ</a></li>
+                    </ul>
+                  </div>
+                  <div class="col-md-4">
+                    <h5>Социальные сети</h5>
+                    <ul class="list-unstyled">
+                      <li><a href="#"><i class="fab fa-facebook-f"></i> Facebook</a></li>
+                      <li><a href="#"><i class="fab fa-twitter"></i> Twitter</a></li>
+                      <li><a href="#"><i class="fab fa-instagram"></i> Instagram</a></li>
+                    </ul>
+                    <h5>Скачать приложение</h5>
+                    <div class="d-flex justify-content-center">
+                      <a href="#" class="btn btn-primary me-2"><i class="fab fa-apple"></i> App Store</a>
+                      <a href="#" class="btn btn-primary"><i class="fab fa-google-play"></i> Google Play</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="row mt-3">
+                  <div class="col-md-12 text-center">
+                    <p>&copy; 2023 SweetHome - by <a href="https://github.com/Djostit" class="text-white">Djostit</a></p>
+                  </div>
+                </div>
+              </div>
+        </footer>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
